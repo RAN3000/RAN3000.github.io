@@ -245,6 +245,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   github-pages
+  minima
 
 BUNDLED WITH
    2.0.2
