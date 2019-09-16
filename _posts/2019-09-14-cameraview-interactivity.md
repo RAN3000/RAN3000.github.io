@@ -1,5 +1,5 @@
 ---
-title: "Recording a camera overlay with CameraView: \nan interactive example."
+title: "Recording a camera overlay on Android with CameraView: \nan interactive example."
 date: 2019-09-14T21:42:56+02:00
 draft: true
 ---
@@ -12,8 +12,8 @@ I want to explain a little bit what's going on in the following demo. It is a de
 Here's a sneak peak:
 
 <p>
-<img src="https://raw.githubusercontent.com/RAN3000/CameraView-overlay-demos/master/media/ciao_screenshot.png" alt="screenshot" width="250" vspace="20" hspace="5">
-<img src="https://github.com/RAN3000/CameraView-overlay-demos/raw/master/media/ciao.gif" alt="video" width="250" vspace="20" hspace="5">
+<img src="https://raw.githubusercontent.com/RAN3000/CameraView-overlay-demos/master/media/ciao_screenshot.png" alt="Screenshot of the app UI with 'Ciao' written on top of the camera preview." width="250" vspace="20" hspace="5">
+<img src="https://github.com/RAN3000/CameraView-overlay-demos/raw/master/media/ciao.gif" alt="GIF of the video recording while drawing 'Ciao' on top of the camera preview." width="250" vspace="20" hspace="5">
 </p>
 
 It's basically Android Draw on top of the camera preview.  
@@ -135,7 +135,7 @@ drawView.setOnTouchListener(new View.OnTouchListener() {
 
 By tapping a few times on the screen, you will see the following in the LogCat.
 
-...logcat image...
+![LogCat showing CameraView intercepting touch events](/assets/img/2019-09-14-cameraview-interactivity/logcat.png)
 
 The CameraView is intercepting our touch events!
 
@@ -248,7 +248,7 @@ forwardTouchesView.setForwardTo(drawView);
 
 Now it's finally working! Here's what you can do:
 
-...image screenshot black paint...
+<img src="/assets/img/2019-09-14-cameraview-interactivity/blackpaint.jpg" alt="Smiling face drawn on top of the camera preview." width="250" vspace="20" hspace="5">
 
 A this point I wanted a little bit more options on the drawing, so I added a sidebar that allows selecting a paint color and clearing the canvas.
 I won't go through the details, you can take a look at the [complete code](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/FreeDrawing).
