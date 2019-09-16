@@ -1,7 +1,7 @@
 ---
 title: "Recording a camera overlay with CameraView: \nan interactive example."
 date: 2019-09-14T21:42:56+02:00
-draft: true
+draft: false
 ---
 
 On Android, recording an overlay on top of the camera has been, until recently, an exceedingly difficult task.  
