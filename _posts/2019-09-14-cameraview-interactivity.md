@@ -1,6 +1,7 @@
 ---
 title: "Recording a camera overlay on Android with CameraView: an interactive example."
 date: 2019-09-14T21:42:56+02:00
+comments: true
 draft: true
 ---
 
