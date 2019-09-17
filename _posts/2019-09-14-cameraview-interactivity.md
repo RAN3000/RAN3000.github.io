@@ -15,7 +15,7 @@ Here's a sneak peak of what we'll build:
 </p>
 
 It's basically [Android Draw](https://github.com/divyanshub024/AndroidDraw) on top of the camera preview.  
-Most of the possible usages of camera overlay don't require interactivity and, as you will see, adding interactivity will not be straightforward. The reason I built this example is to show you what you can possibly do with the library.   
+Most of the usages of a camera overlay that I can think of, don't require interactivity and, as you will see, adding interactivity will not be straightforward. The reason I built this example is to show you what you can possibly create with the library.   
 
 The full code is available on Github [here](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/FreeDrawing) so I won't go through every line of code step by step, I want to tell you about the ideas and the thought process behind it.
 
@@ -239,6 +239,8 @@ And here's how your layout file should look like:
 </FrameLayout>
 ```
 
+![Layers of views, explains the above code more clearly.](/assets/img/2019-09-14-cameraview-interactivity/layers.png)
+
 And finally in your activity's `onCreate` call:
 
 ```java
@@ -274,5 +276,5 @@ First of all here are, again, the links to:
 I want to thank [@natario1](https://github.com/natario1) the author of CameraView for letting me contribute to the repo and for the advice he directly and indirectly gave me. 
 I also want to thank my friend [Luca Malagutti](https://github.com/LucaMalagutti) for reviewing the draft of this (my first) blog post.
 
-You have any question/critique/feedback feel free to leave a comment or hit me up at [giacomoran@gmail.com](giacomoran@gmail.com).
+You have any question/critique/feedback feel free to leave a comment or hit me up at [giacomoran@gmail.com](mailto:giacomoran@gmail.com).
 
