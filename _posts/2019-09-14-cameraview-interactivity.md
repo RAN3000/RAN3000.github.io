@@ -6,7 +6,7 @@ draft: false
 ---
 
 On Android, recording an overlay on top of the camera has been, until recently, an exceedingly difficult task.  
-[CameraView](https://github.com/natario1/CameraView) by [@natario1](https://github.com/natario1) is a great an Android camera library, it's easy to setup yet highly configurable. I've contributed to help introduce, in the new version 2 of the library, the following feature: a simple way to record or take pictures with an overlay/watermark on top of the camera. In this blog post I will show you how to use this new feature
+[CameraView](https://github.com/natario1/CameraView) by [@natario1](https://github.com/natario1) is a great an Android camera library, it's easy to setup yet highly configurable. I've contributed to help introduce, in the new version 2 of the library, the following feature: a simple way to record or take pictures with an overlay/watermark on top of the camera. In this blog post I will show you how to use this new feature.
 
 Here's a sneak peak of what we'll build:
 
