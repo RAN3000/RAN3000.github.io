@@ -6,17 +6,17 @@ draft: true
 ---
 
 On Android, recording an overlay on top of the camera has been, until recently, an exceedingly difficult task.  
-[CameraView](https://github.com/natario1/CameraView) by [@natario1](https://github.com/natario1) is a great an Android camera library, it's easy to setup yet highly configurable. I've contributed to help introduce, in the new version 2 of the library, the following feature: a simple way to record or take pictures with an overlay/watermark on top of the camera. I want to show you how to work with this new feature.
+[CameraView](https://github.com/natario1/CameraView) by [@natario1](https://github.com/natario1) is a great an Android camera library, it's easy to setup yet highly configurable. I've contributed to help introduce, in the new version 2 of the library, the following feature: a simple way to record or take pictures with an overlay/watermark on top of the camera. In this blog post I will show you how to use this new feature
 
 Here's a sneak peak of what we'll build:
 
 <p>
-<img src="https://raw.githubusercontent.com/RAN3000/CameraView-overlay-demos/master/media/ciao_screenshot.png" alt="Screenshot of the app UI with 'Ciao' written on top of the camera preview." width="250" vspace="20" hspace="5">
 <img src="https://github.com/RAN3000/CameraView-overlay-demos/raw/master/media/ciao.gif" alt="GIF of the video recording while drawing 'Ciao' on top of the camera preview." width="250" vspace="20" hspace="5">
+<img src="https://raw.githubusercontent.com/RAN3000/CameraView-overlay-demos/master/media/ciao_screenshot.png" alt="Screenshot of the app UI with 'Ciao' written on top of the camera preview." width="250" vspace="20" hspace="5">
 </p>
 
 It's basically [Android Draw](https://github.com/divyanshub024/AndroidDraw) on top of the camera preview.  
-Most of the usages of a camera overlay that I can think of, don't require interactivity and, as you will see, adding interactivity will not be straightforward. The reason I built this example is to show you what you can possibly create with the library.   
+Most of the usages of a camera overlay that I can think of, don't require interactivity and, as you will see, adding interactivity will not be straightforward. The reason I built this example is to show you what you can create with the library.   
 
 The full code is available on Github [here](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/FreeDrawing) so I won't go through every line of code step by step, I want to tell you about the ideas and the thought process behind it.
 
@@ -31,7 +31,7 @@ The starting point will be a basic camera activity featuring:
 
 If this is the first time you hear about CameraView, you can head over to [the documentation](https://natario1.github.io/CameraView/) and try to create this activity by yourself to get familiar with CameraView.
 
-Otherwise, you can just grab the code from Github [here](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/BasicWatermark). Consider this little project a snapshot, a starting point from which I'll build this example and possibly future examples regarding CameraView. I'll refer to it as BasicWatermark.
+Otherwise, you can just grab the code from Github [here](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/BasicWatermark). Consider this little project a snapshot, a starting point from which I'll build this example and future examples regarding CameraView. I'll refer to it as BasicWatermark.
 
 To build BasicWatermark, I basically followed the [getting started](https://natario1.github.io/CameraView/about/getting-started.html) guide, added a bunch of buttons and copied the `PicturePreviewActivity` and `VideoPreviewActivity` from CameraView's demo.
 
@@ -148,7 +148,7 @@ I've found a workaround, it's not very elegant but it works.
 - make your layout a `FrameLayout` which allows stacking `View`s. The children will take the following order (from front to back) ConstraintLayout (or whatever layout that holds your UI) > ForwardTouchesView > CameraView with DrawView as overlay.
 - have the `ForwardTouchesView` forward touch events to the `DrawView`.
 
-By doing so the `ForwardTouchesView`, since it is on top of the `CameraView`, will intercept touches from the `CameraView` and forward them to the `DrawView` instead.
+By doing so the `ForwardTouchesView`, since it is on top of the `CameraView`, will intercept touch events from the `CameraView` and forward them to the `DrawView` instead.
 
 In practice, here's the code for the `ForwardTouchesView`.
 
@@ -268,14 +268,13 @@ I have no idea if the following is the best option but I managed to fix this pro
 
 That's something you might have to keep in mind if your overlay is a custom view with complex behavior like `DrawView`.
 
-## Thanks
+## The end 
 First of all here are, again, the links to:
 
 - [CameraView](https://github.com/natario1/CameraView)
 - [Android Draw](https://github.com/divyanshub024/AndroidDraw)
 
 I want to thank [@natario1](https://github.com/natario1) the author of CameraView for letting me contribute to the repo and for the advice he directly and indirectly gave me. 
-I also want to thank my friend [Luca Malagutti](https://github.com/LucaMalagutti) for reviewing the draft of this (my first) blog post.
 
 You have any question/critique/feedback feel free to leave a comment or hit me up at [giacomoran@gmail.com](mailto:giacomoran@gmail.com).
 
