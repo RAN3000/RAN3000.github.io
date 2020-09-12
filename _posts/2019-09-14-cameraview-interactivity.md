@@ -11,14 +11,14 @@ On Android, recording an overlay on top of the camera has been, until recently, 
 Here's a sneak peak of what we'll build:
 
 <p>
-<img src="https://github.com/RAN3000/CameraView-overlay-demos/raw/master/media/ciao.gif" alt="GIF of the video recording while drawing 'Ciao' on top of the camera preview." width="250" vspace="20" hspace="5">
-<img src="https://raw.githubusercontent.com/RAN3000/CameraView-overlay-demos/master/media/ciao_screenshot.png" alt="Screenshot of the app UI with 'Ciao' written on top of the camera preview." width="250" vspace="20" hspace="5">
+<img src="https://github.com/randiisan/CameraView-overlay-demos/raw/master/media/ciao.gif" alt="GIF of the video recording while drawing 'Ciao' on top of the camera preview." width="250" vspace="20" hspace="5">
+<img src="https://raw.githubusercontent.com/randiisan/CameraView-overlay-demos/master/media/ciao_screenshot.png" alt="Screenshot of the app UI with 'Ciao' written on top of the camera preview." width="250" vspace="20" hspace="5">
 </p>
 
 It's basically [Android Draw](https://github.com/divyanshub024/AndroidDraw) on top of the camera preview.  
 Most of the usages of a camera overlay that I can think of, don't require interactivity and, as you will see, adding interactivity will not be straightforward. The reason I built this example is to show you what you can create with the library.   
 
-The full code is available on Github [here](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/FreeDrawing) so I won't go through every line of code step by step, I want to tell you about the ideas and the thought process behind it.
+The full code is available on Github [here](https://github.com/randiisan/CameraView-overlay-demos/tree/master/FreeDrawing) so I won't go through every line of code step by step, I want to tell you about the ideas and the thought process behind it.
 
 ## A basic camera Activity
 
@@ -31,7 +31,7 @@ The starting point will be a basic camera activity featuring:
 
 If this is the first time you hear about CameraView, you can head over to [the documentation](https://natario1.github.io/CameraView/) and try to create this activity by yourself to get familiar with CameraView.
 
-Otherwise, you can just grab the code from Github [here](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/BasicWatermark). Consider this little project a snapshot, a starting point from which I'll build this example and future examples regarding CameraView. I'll refer to it as BasicWatermark.
+Otherwise, you can just grab the code from Github [here](https://github.com/randiisan/CameraView-overlay-demos/tree/master/BasicWatermark). Consider this little project a snapshot, a starting point from which I'll build this example and future examples regarding CameraView. I'll refer to it as BasicWatermark.
 
 To build BasicWatermark, I basically followed the [getting started](https://natario1.github.io/CameraView/about/getting-started.html) guide, added a bunch of buttons and copied the `PicturePreviewActivity` and `VideoPreviewActivity` from CameraView's demo.
 
@@ -87,7 +87,7 @@ The open source library [Android Draw](https://github.com/divyanshub024/AndroidD
 
 Our goal is to allow the user to paint on top of the camera preview, the drawing will show up in pictures and recorded videos.  
 
-Again, I assume as a starting point a copy of the [BasicWatermark](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/BasicWatermark) Android Studio project.
+Again, I assume as a starting point a copy of the [BasicWatermark](https://github.com/randiisan/CameraView-overlay-demos/tree/master/BasicWatermark) Android Studio project.
 
 After importing Android Draw as a dependency, the first thing that comes to mind is to simply add the `DrawView` as a child of `CameraView`. Like the following:
 
@@ -253,7 +253,7 @@ Now it should be working! Here's what you can do:
 <img src="/assets/img/2019-09-14-cameraview-interactivity/blackpaint.jpg" alt="Smiling face drawn on top of the camera preview." width="250" vspace="20" hspace="5">
 
 A this point I wanted a little bit more options for the drawing, so I added a sidebar that allows the user to select a paint color and to clear the canvas.
-I won't go through the details, you can take a look at the [complete code](https://github.com/RAN3000/CameraView-overlay-demos/tree/master/FreeDrawing).
+I won't go through the details, you can take a look at the [complete code](https://github.com/randiisan/CameraView-overlay-demos/tree/master/FreeDrawing).
 
 ### Weird crashes
 
