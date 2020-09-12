@@ -21,11 +21,11 @@
 title: Giacomo Randazzo 
 email: giacomoran@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-   At some point I'll add a description.
+   Personal blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ran3000.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: RAN3000 
-github_username: RAN3000 
+url: "https://randiisan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: randiisan 
+github_username: randiisan 
 
 # Build settings
 theme: minima
