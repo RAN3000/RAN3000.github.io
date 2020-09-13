@@ -7,7 +7,7 @@ draft: false
 
 I've heard somebody say that the only reason people go rock climbing is to get into flow state. Lately you can find me pretty often at the local cliff, I compared the statement to my own experience: I am getting into flow state while climbing and it's a big source of enjoyment (though it's not the only one).
 
-Sometimes I get into flow state while going through my daily Anki review. Flow is a state we naturally desire, therefore it's something we can work on to make spaced repetition reviews emotionally more compelling. I'll explain some of the changes I've made to my Anki settings in order to maximize time in flow state while reviewing my flashcards.
+Sometimes I get into flow state while going through my daily Anki review. Flow is a state we naturally desire, therefore it's something we can work on to make spaced repetition reviews more compelling. I'll explain some of the changes I've made to my Anki settings in order to maximize time in flow state while reviewing my flashcards.
 <br/>I'll talk about spaced repetition for memorization. I think that memorization is just the tip of the iceberg, spaced repetition can aid deep understanding, it can trigger insights, thinking and reflection. These goals of spaced repetition are still rare, they are not well defined and ideas keep emerging, relating flow to them would be a much harder task, therefore for now I'll stick to the goal of memorizing information.
 
 Mihaly Csikszentmihalyi describes the environmental conditions for flow in his book [Flow: The Psychology of Optimal Experience](https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202/ref=sr_1_1?dchild=1&keywords=flow&qid=1599916631&sr=8-1).
@@ -31,7 +31,7 @@ Let's say the flashcard is about a procedure with 2 steps. You'll need to rememb
 
 The card should be marked as wrong if we didn't recall any of these concepts. We can break the card down by creating four cards, instead of just one, one for each of the concepts.
 That way failure becomes much less ambiguous, for each atomic card we either get it right or we get it wrong, there's no partially right or partially wrong answers. 
-<br/>In general complex cards can be hazy, we tend to leave out the details. Breaking down complex cards, that is atomizing them, forces us to focus on the details. We increase the resolution. Though we have to be careful to also retain the bigger picture, I like to keep also a few complex cards in my decks, but they constitute a very low percentage of them.
+<br/>In general complex cards can be hazy, we tend to leave out the details. Breaking down complex cards, that is atomizing them, forces us to focus on the details. We increase the resolution. Though we have to be careful to also retain the bigger picture, I like to keep also a few complex cards in my decks, but they make up a very low percentage of them.
 Doing this gets us closer to satisfying the one of the conditions of flow, tight feedback loop where failure is clear.
 
 Atomizing our flashcards has a further advantage that the feedback loop gets even tighter. Generally it takes a shorter time to read the question and to answer in our minds, we have to retrieve from memory a single concept. We quickly reveal the true answer and thus get feedback: were we right or were we wrong? Either way we move to the next flashcard.
