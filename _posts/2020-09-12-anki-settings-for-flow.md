@@ -2,7 +2,7 @@
 title: "Anki settings for flow."
 date: 2020-09-12T18:42:56+02:00
 comments: true
-draft: false
+draft: true
 ---
 
 I've heard somebody say that the only reason people go rock climbing is to get into flow state. Lately you can find me pretty often at the local cliff, I compared the statement to my own experience: I am getting into flow state while climbing and it's a big source of enjoyment (though it's not the only one).
